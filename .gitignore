@@ -1,0 +1,10 @@
+# 배포할 때 만들어지는 파일 (계정·리소스 정보가 들어감)
+infra/.deploy-output.env
+frontend/config.js
+
+__pycache__/
+*.pyc
+*.zip
+.DS_Store
+.vscode/
+.env
