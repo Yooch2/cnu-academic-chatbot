@@ -47,3 +47,10 @@ document.querySelectorAll(".examples button").forEach((btn) => {
 });
 
 checkHealth();
+
+// 주소에 ?q=질문 이 있으면 바로 물어본다 (질문 링크 공유용)
+const sharedQ = new URLSearchParams(location.search).get("q");
+if (sharedQ) {
+  document.getElementById("question").value = sharedQ;
+  ask(sharedQ);
+}
