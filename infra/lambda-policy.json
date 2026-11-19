@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "WriteOwnLogs",
+      "Effect": "Allow",
+      "Action": ["logs:CreateLogGroup", "logs:CreateLogStream", "logs:PutLogEvents"],
+      "Resource": "arn:aws:logs:ap-northeast-2:__ACC__:log-group:/aws/lambda/__FUNC__:*"
+    },
+    {
+      "Sid": "ReadRawDocs",
+      "Effect": "Allow",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::__DOCS_BUCKET__/raw/*"
+    },
+    {
+      "Sid": "WriteChatLog",
+      "Effect": "Allow",
+      "Action": "dynamodb:PutItem",
+      "Resource": "arn:aws:dynamodb:ap-northeast-2:__ACC__:table/__TABLE__"
+    }
+  ]
+}
