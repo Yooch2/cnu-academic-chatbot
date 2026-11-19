@@ -1,0 +1,14 @@
+body { font-family: -apple-system, "Malgun Gothic", sans-serif; background: #f4f6fa; margin: 0; }
+main { max-width: 720px; margin: 40px auto; background: #fff; padding: 28px 32px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+h1 { margin: 0 0 4px; color: #1d3f8a; }
+.sub { margin: 0 0 18px; color: #666; font-size: 14px; }
+.health { padding: 8px 12px; border-radius: 6px; background: #eee; font-size: 14px; margin-bottom: 16px; }
+.health.ok { background: #e3f6e8; color: #1e7a35; }
+.health.fail { background: #fde8e8; color: #b42318; }
+.examples { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.examples button { border: 1px solid #c5d3ee; background: #f1f5fd; border-radius: 16px; padding: 6px 12px; cursor: pointer; }
+form { display: flex; gap: 8px; }
+input { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 15px; }
+form button { padding: 10px 16px; border: 0; background: #1d3f8a; color: #fff; border-radius: 6px; cursor: pointer; }
+#result { margin-top: 20px; border-top: 1px solid #eee; padding-top: 12px; }
+#sources span { color: #888; font-size: 13px; }

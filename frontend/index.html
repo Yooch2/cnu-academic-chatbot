@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>충남대 학사 안내 챗봇 (테스트)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>충남대 학사 안내 챗봇</h1>
+    <p class="sub">2주차 환경 구성 테스트 화면 · 답변은 예시 문서 기준입니다</p>
+
+    <div id="health" class="health">API 상태 확인 중...</div>
+
+    <div class="examples">
+      <button data-q="휴학 신청 기간이 언제예요?">휴학 신청 기간</button>
+      <button data-q="복수전공 하면 졸업 학점이 몇 학점이에요?">복수전공 졸업 학점</button>
+      <button data-q="교내 장학금은 언제 신청해요?">장학금 신청</button>
+    </div>
+
+    <form id="chat-form">
+      <input id="question" type="text" placeholder="학사 관련 질문을 입력하세요" required>
+      <button type="submit">질문하기</button>
+    </form>
+
+    <section id="result" hidden>
+      <h2>답변</h2>
+      <p id="answer"></p>
+      <h3>출처</h3>
+      <ul id="sources"></ul>
+    </section>
+  </main>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
